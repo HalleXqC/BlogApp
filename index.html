@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/blog.png">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-left">
+                <img src="img/blog.png" alt="blog.png">
+                <h3 title="Blog App">Blog App</h3>
+            </div>
+            <div class="header-right">
+                <a href="#main-title">Explore the posts</a>
+            </div>
+        </div>
+        <div class="header-bg">
+            <div class="header-bg-img"></div>
+            <div class="header-bg-blackout"><h1>Communicate with your staff</h1></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-title" id="main-title">
+            <h3 title="posts">Posts</h3>
+        </div>
+        <div class="main">
+            <div class="main-left">
+
+            </div>
+        </div>
+    </main>
+
+    <div class="addBtn">
+        <button><img src="img/plus.png" alt="plus"></button>
+    </div>
+
+    <div class="editMain displayNone">
+        <div class="editBlock">
+            <span class="editCloseBtn">&times;</span>
+            <div class="editTitle">
+                <h3 title="Create Post">Create Post</h3>
+            </div>
+            <form>
+                <input type="text" class="inputTitle" placeholder="Title...">
+                <input type="text" class="inputText" placeholder="Text...">
+                <input type="text" class="inputAuthor" placeholder="Author...">
+                <input type="text" class="inputImage" placeholder="Image (url)...">
+                <input class="submitBtn" value="Submit" onclick="createBlog()" type="submit">
+            </form>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/aacff25297.js" crossorigin="anonymous"></script>
+</body>
+</html>

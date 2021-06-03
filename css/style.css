@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 1rem 4rem;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header-left img{
+    width: 50px;
+    margin-right: 1rem;
+}
+.header-left h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.header-right a{
+    color: white;
+    background-color: #7d81e7;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 2px;
+    transition: 0.5s;
+    font-weight: 600;
+}
+.header-right a:hover{
+    background-color: #5e69e2;
+}
+.header-bg{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+.header-bg-img{
+    background: url('../img/header-bg.jpg') center / cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.header-bg-blackout{
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-bg-blackout h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: white;
+    opacity: 1; 
+}
+.main-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-title h3{
+    width: 20%;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    height: 50px;
+    border-top: 1px solid #010101da;
+    border-bottom: 1px solid #010101da;
+    font-family: 'Open Sans', sans-serif;
+}
+.main{
+    display: flex;
+    align-items: flex-start;
+    min-height: 50vh;
+    padding: 1rem 4rem;
+}
+.main-left{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    border: 0.5px solid #7d81e7;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px #5e69e2;
+    margin: 0.5rem;
+}
+.card-header{
+    background-color: #5e69e2;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deleteBtn{
+    right: 0px;
+    color: #ff80a7;
+}
+.deleteBtn:hover{
+    background-color: #ff80a7;
+    color: white;
+}
+.editBtn{
+    right: 35px;
+    color: #fff79f;
+}
+.editBtn:hover{
+    background-color: #fff79f;
+    color: black;
+}
+.rotateBtn{
+    right: 70px;
+    color: #90e36a;
+}
+.rotateBtn:hover{
+    background-color: #90e36a;
+    color: white;
+}
+.rotateBtn i{
+    font-weight: 600 !important; 
+}
+.imageBtn{
+    right: 105px;
+    border-bottom-left-radius: 5px;
+    color: #FFD166;
+}
+.imageBtn:hover{
+    background-color: #FFD166;
+    color: black;
+}
+.fixedBtn{
+    position: absolute;
+    height: 20px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    top: 0px;
+    transition: 0.2s;
+}
+.fixedBtn i{
+    font-size: 12px;
+    font-weight: 400;
+}
+.card-header h4{
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-shadow:
+    0px 0px 1px rgba(0,0,0,0.6),
+    0px 0px 1px rgba(0,0,0,0.6),
+    0px 0px 1px rgba(0,0,0,0.6),
+    0px 0px 1px rgba(0,0,0,0.6),
+    0px 0px 1px rgba(0,0,0,0.6),
+    0px 0px 1px rgba(0,0,0,0.6),
+    0px 0px 1px rgba(0,0,0,0.6);
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60%;
+    overflow-x: hidden;
+    padding: 0rem 1rem;
+}
+.card-body p{
+    font-size: 16px;
+}
+.card-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+}
+.card-footer div p{
+    opacity: 0.7;
+    font-size: 14px;
+}
+.card-footer div{
+    padding: 1rem;
+}
+.editMain{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+.editBlock{
+    position: relative;
+    width: 50%;
+    min-height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.editTitle{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    background-color: #7d81e7;
+}
+.editTitle h3{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    text-shadow:
+    0px 0px 1px rgba(0,0,0,0.6),
+    0px 0px 1px rgba(0,0,0,0.6),
+    0px 0px 1px rgba(0,0,0,0.6),
+    0px 0px 1px rgba(0,0,0,0.6),
+    0px 0px 1px rgba(0,0,0,0.6);
+}
+.editBlock form{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.editBlock form input{
+    width: 90%;
+    min-height: 30px;
+    padding: 0.75rem 1.5rem;
+    border: 1px ;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 10px;
+    margin: auto 0;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+.submitBtn{
+    margin-bottom: 0 !important;
+    margin-top: 1rem !important;
+    width: 200px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: #5e69e2;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.submitBtn:hover{
+    background-color: #7d81e7 ;
+}
+.editCloseBtn{
+    font-size: 600;
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    transition: 0.3s;
+}
+.editCloseBtn:hover{
+    color: #ff80a7;
+}
+
+
+.addBtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #90e36a;
+    border-radius: 100%;
+    border: 1px outset #83fd4a;
+    cursor: pointer;
+}
+.addBtn button{
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.addBtn button img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.displayNone{
+    display: none;
+}
+
+.authorBlock{
+    overflow: hidden;
+}
+
+.imageMain{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.imageBlock{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+}
+.imageBlock span{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    padding: 10px;
+}
+.imageBlock span a{
+    text-decoration: none;
+    color: #00a2f5;
+    transition: 0.3s;
+    font-size: 16px;
+}
+.imageBlock span a:hover{
+    color: #3eb6f1;
+}
+.imageBlock img{
+    width: 100%;
+    height: 90%;
+}
+.imageBlock article{
+    position: absolute;
+    color: red;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 30px;
+    right: 5px;
+    top: -10px;
+}
+.imageBlock article:hover{
+    color: #ff80a7;
+}
+.imageBlock div{
+    width: 100%;
+    height: 90%;
+}
